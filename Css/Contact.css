@@ -1,0 +1,33 @@
+body{
+  background-color: darkgray;
+}
+#mySidenav a {
+  position: absolute;
+  right: -60px;
+  transition: 0.3s;
+  font-family: 'Dancing Script', cursive;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 25px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  }  
+#mySidenav a:hover {
+  right: 0;
+}  
+#home {
+  top: 20px;
+  background-color:black;
+  color: white;
+}
+#about {
+  top: 90px;
+  background-color:white;
+  color: black;
+}  
+#contact {
+  top: 160px;
+  background-color: black;
+  color: white;
+}
