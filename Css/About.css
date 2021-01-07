@@ -17,17 +17,28 @@ body{
   right: 0;
 }  
 #home {
-  top: 20px;
+  top: 710px;
   background-color:black;
   color: white;
 }
 #about {
-  top: 90px;
+  top: 780px;
   background-color:white;
   color: black;
 }  
 #contact {
-  top: 160px;
+  top: 850px;
   background-color: black;
   color: white;
+}
+#dis{
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+#di{
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: underline;
 }

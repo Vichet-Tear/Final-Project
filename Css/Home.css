@@ -1,14 +1,10 @@
 body{
-    background-color: darkgray;
+    background-color: lightgray;
 }
 #head{
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
-  border: 2px solid white;
-  border-radius: 20px;
-  padding: 1%;
-  height: 150px;
-  width: 100%;
+  margin-top: 50px;
   text-decoration: underline white;
   color: black;
   font-family: 'Langar', cursive;
@@ -29,17 +25,50 @@ body{
   right: 0;
 }  
 #home {
-  top: 20px;
+  top: 710px;
   background-color:black;
   color: white;
 }
 #about {
-  top: 90px;
+  top: 780px;
   background-color:white;
   color: black;
 }  
 #contact {
-  top: 160px;
+  top: 850px;
   background-color: black;
   color: white;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Yeon Sung', cursive;
+  float: left;
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.price {
+  color: black;
+  font-size: 22px;
+  font-family: 'Yeon Sung', cursive;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
 }
