@@ -50,7 +50,12 @@ body{
   clear: both;
   content: "";
 }
-
+.item{
+  box-sizing: border-box;
+  float: left;
+  width: 20%;
+  padding: 2%;
+}
 .price {
   color: black;
   font-size: 22px;
