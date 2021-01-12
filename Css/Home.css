@@ -77,7 +77,7 @@ body{
   outline: 0;
   padding: 12px;
   color: white;
-  background-color:black;
+  background-color: black;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -88,7 +88,36 @@ body{
   opacity: 0.7;
 }
 a:link {
-  color:white;
+  color: white;
   background-color: transparent;
-  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
+@media screen and (max-width: 300px) {
+  .item{
+    width: 100%; 
+  }
+  #mySidenav{
+    box-sizing: border-box;
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 300px) {
+  .item{
+    width: 33.33%; 
+  }
+  #mySidenav{
+    box-sizing: border-box;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .item{
+    width: 20%; 
+  }
+  #mySidenav{
+    box-sizing: border-box;
+    width: 50%;
+  }
 }
