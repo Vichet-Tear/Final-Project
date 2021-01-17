@@ -1,5 +1,13 @@
 body{
-    background-color: darkgray;
+    background-color: lightgray;
+}
+#head{
+  font-size: 33px;
+  text-align: center;
+  margin-top: 50px;
+  text-decoration: underline white;
+  color: white;
+  font-family: 'Langar', cursive;
 }
 .topnav {
   overflow: hidden;
@@ -14,12 +22,6 @@ body{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  margin: 0;
-}
-
-.active {
-  background-color: white;
-  color: black;
 }
 
 .topnav .icon {
@@ -27,12 +29,7 @@ body{
 }
 
 .topnav a:hover {
-  background-color: #555;
-  color: white;
-}
-
-a:hover {
-  background-color: #ddd;
+  background-color: white;
   color: black;
 }
 

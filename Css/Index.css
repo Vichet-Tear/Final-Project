@@ -24,9 +24,9 @@ body{
   font-size: 17px;
 }
 
-.active {
-  background-color: white;
-  color: black;
+a:active{
+  background-color:black;
+  color: white;
 }
 
 .topnav .icon {
@@ -34,12 +34,7 @@ body{
 }
 
 .topnav a:hover {
-  background-color: #555;
-  color: white;
-}
-
-a:hover {
-  background-color: #ddd;
+  background-color: white;
   color: black;
 }
 
@@ -88,6 +83,10 @@ a:hover {
   clear: both;
   content: "";
 }
+.card #btn-card{
+  color:white;
+}
+
 .item{
   box-sizing: border-box;
   float: left;
@@ -119,6 +118,4 @@ a:link {
   color: white;
   background-color: transparent;
 }
-a:hover {
-  color: white;
-}
+

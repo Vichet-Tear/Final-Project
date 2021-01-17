@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./../Css/Shirt.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </head>
 <body>
      <!--Nav-->
      <div class="topnav" id="myTopnav">
+        <span id="head">Dizzy House</span>
         <a href="./Contact.html">Contact</a>
         <a href="./About.html">About</a>
         <a href="./Shirt.html">Shirt</a>
         <a href="./Pant and short.html">Pant & Short</a>
         <a href="./Shoe.html">Shoe</a>
-        <a href="./Home.html" class="active">Home</a>
+        <a href="./../Index.html">Home</a>
     </div>
 </div>
 </body>
