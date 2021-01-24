@@ -8,6 +8,40 @@
     <link rel="stylesheet" href="./../Css/Contact.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/integration
+        emailjs.init("user_9x878qChrLXx7b8Hlc19i");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // these IDs from the previous steps
+            emailjs.sendForm("service_r2lzn24", "123abc",this).then(
+              function () {
+                alert("SUCCESS!");
+                document.getElementById("fname").value="";
+                document.getElementById("lname").value="";
+                document.getElementById("Email").value="";
+                document.getElementById("country").value="";
+                document.getElementById("subject").value="";
+
+              },
+              function (error) {
+                alert("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script>
 </head>
 
 <body>
@@ -22,7 +56,7 @@
         <a href="./../Index.html" class="active">Home</a>
     </div>
     <div class="container">
-        <form action="/action_page.php">
+        <form id="contact-form">
           <div class="row">
             <div class="col-25">
               <label for="fname">First Name</label>
@@ -116,7 +150,7 @@
               <label for="subject">Message</label>
             </div>
             <div class="col-75">
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
             </div>
           </div>
           <div class="row">

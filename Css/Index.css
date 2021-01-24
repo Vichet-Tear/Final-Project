@@ -18,8 +18,8 @@ body{
 .topnav {
   overflow: hidden;
   background-color: #333;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .topnav a {
