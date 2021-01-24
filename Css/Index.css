@@ -1,5 +1,11 @@
 body{
     background-color: lightgray;
+    padding: 0px;
+    margin: 0px;
+}
+*{
+  padding: 0px;
+  margin: 0px;
 }
 #head{
   font-size: 50px;
@@ -12,6 +18,8 @@ body{
 .topnav {
   overflow: hidden;
   background-color: #333;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .topnav a {
