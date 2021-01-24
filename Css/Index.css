@@ -10,7 +10,7 @@ body{
 #head{
   font-size: 50px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
   text-decoration: underline white;
   color: black;
   font-family: 'Langar', cursive;
@@ -18,8 +18,6 @@ body{
 .topnav {
   overflow: hidden;
   background-color: #333;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
 }
 
 .topnav a {
