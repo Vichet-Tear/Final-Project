@@ -71,21 +71,22 @@ a:active{
   width: 20%;
   padding: 2%;
 }
+
 @media only screen and (max-width: 600px) {
   .item{
-    width: 100%;
+    width: 20%;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .item{
-    width: 75%;
+    width: 33.33%;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .item{
-    width: 50%;
+    width: 100%;
   }
 }
 .price {
