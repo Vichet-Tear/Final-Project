@@ -3,10 +3,12 @@ body{
     padding: 0px;
     margin: 0px;
 }
+
 *{
   padding: 0px;
   margin: 0px;
 }
+
 #head{
   font-size: 50px;
   text-align: center;
@@ -15,6 +17,11 @@ body{
   color: black;
   font-family: 'Langar', cursive;
 }
+
+.nav-item {
+  padding-left: 24px;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #333;

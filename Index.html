@@ -40,8 +40,8 @@
                             Item
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Shirt</a></li>
-                            <li><a class="dropdown-item" href="#">Shoe</a></li>
+                            <li><a class="dropdown-item" href="./Html/Shirt.html">Shirt</a></li>
+                            <li><a class="dropdown-item" href="./Html/Shoe.html">Shoe</a></li>
                             <li><a class="dropdown-item" href="./Html/Pant and short.html">Short & Pant</a></li>
                         </ul>
                     </li>
@@ -77,7 +77,7 @@
             },
             {
                 id: 2,
-                url: "https://outdoor-and-country-res.cloudinary.com/image/upload/e_trim:2/bo_8px_solid_white/c_pad,b_white,w_1000,h_1200,f_auto,q_auto/v1540205233/product/186710.jpg",
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
                 name: "T-shirt",
                 price: 75,
                 description: "Hello",
@@ -88,7 +88,91 @@
                 name: "T-shirt",
                 price: 150,
                 description: "Hello",
-            }
+            },
+            {
+                id: 3,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello",
+            },
+            {
+                id: 3,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello",
+            },
+            {
+                id: 3,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello",
+            },
+            {
+                id: 3,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello",
+            },
+            {
+                id: 3,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello",
+            },
+            {
+                id: 3,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello",
+            },
+            {
+                id: 3,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello",
+            },
+            {
+                id: 3,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello",
+            },
+            {
+                id: 3,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello",
+            },
+            {
+                id: 3,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello",
+            },
+            {
+                id: 3,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello",
+            },
+            {
+                id: 3,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello",
+            },
         ];
         var container = document.getElementById("container")
         container.innerHTML = `
@@ -101,13 +185,28 @@
             <h1>${p.name}</h1>
             <p class="price">${p.price}$</p>
             <p>${p.description}</p>
-            <p><button><a classs="btn-card">Add to Cart</a></button></p>
+            <p><button class="btn-card">Add to Cart</button></p>
             </div>
             </div>
                 `
         })
             }
         `;
+        var bnts = document.getElementsByClassName("btn-card");
+        console.log(bnts);
+        var cards = [];
+        for (let i = 0; i < bnts.length; i++) {
+            bnts[i].addEventListener("click", () => {
+                console.log("äddCard")
+                addCard(i);
+            })
+        }
+        function addCard(ind) {
+            bnts.disabled = true;
+            cards.push(products[ind]);
+            localStorage.setItem("shops", JSON.stringify(cards))
+
+        }
 
 
 
