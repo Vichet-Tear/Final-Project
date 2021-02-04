@@ -1,13 +1,9 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+
 }
 
-.container-fluid {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 20px;
-}
 
 .nav-item {
     padding-left: 24px;
@@ -30,7 +26,6 @@ body {
     margin-right: 1.5%;
     margin-bottom: 2%;
 }
-
 .card:hover {
     border-color: black;
     cursor: pointer;
@@ -38,3 +33,10 @@ body {
 .D-001,.D-002,.D-003,.D-004,.D-005,.D-006,.D-007,.D-008,.D-009,.D-0010,.D-0011,.D-0012{
     height: 250px;
 }
+@media screen and (max-width: 650px) {
+    .card {
+      width: 100%;
+      display: block;
+    }
+  }
+
