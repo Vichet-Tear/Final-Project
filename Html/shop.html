@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./../Css/shop.css">
 </head>
+
 <body>
     <p id="amountCard"></p>
+    <div class="item">
+        <img class="image" src="${item.url}"/>
+        <p class='desc'>${item.description}</p>
+        <p class='desc'>${item.price}</p>
+        <div class="btn">
+            <button class="btns">Add card</button>
+        </div>
+    </div>
     <div id="container"></div>
     <a href="./card.html">Go to product</a>
     <script>
-        const items = {
-            {
-                id:
-            }
+        const items = [{
+            id: 1,
+            url:"https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+            description: "Card-01",
+            price: 5,
+            inCard: 1,    
+        },
+        {
+
+        },
+    ]
+    var container= document.getElementById("container");
+
+    app.innerHTML =`
+        ${
+            products.map((product)=>{
+                return `
+
+                ` 
+            })
         }
+    `
     </script>
 </body>
+
 </html>

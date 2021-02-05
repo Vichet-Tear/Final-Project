@@ -60,10 +60,7 @@
         <a>Dizzy House</a>
     </div>
     <!-- card -->
-
-
     <div id="container">
-
     </div>
     <script>
         var products = [
@@ -72,7 +69,7 @@
                 url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
                 name: "T-shirt",
                 price: 150,
-                description: "Hello 0000",
+                description: "Hello"
 
             },
             {
@@ -80,98 +77,98 @@
                 url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
                 name: "T-shirt",
                 price: 75,
-                description: "Hello",
+                description: "Hello"
             },
             {
                 id: 3,
                 url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
                 name: "T-shirt",
                 price: 150,
-                description: "Hello",
+                description: "Hello"
             },
             {
-                id: 3,
+                id: 4,
                 url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
                 name: "T-shirt",
                 price: 150,
-                description: "Hello",
+                description: "Hello"
             },
             {
-                id: 3,
+                id: 5,
                 url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
                 name: "T-shirt",
                 price: 150,
-                description: "Hello",
+                description: "Hello"
             },
             {
-                id: 3,
+                id: 6,
                 url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
                 name: "T-shirt",
                 price: 150,
-                description: "Hello",
+                description: "Hello"
             },
             {
-                id: 3,
+                id: 7,
                 url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
                 name: "T-shirt",
                 price: 150,
-                description: "Hello",
+                description: "Hello"
             },
             {
-                id: 3,
+                id: 8,
                 url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
                 name: "T-shirt",
                 price: 150,
-                description: "Hello",
+                description: "Hello"
             },
             {
-                id: 3,
+                id: 9,
                 url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
                 name: "T-shirt",
                 price: 150,
-                description: "Hello",
+                description: "Hello"
             },
             {
-                id: 3,
+                id: 10,
                 url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
                 name: "T-shirt",
                 price: 150,
-                description: "Hello",
+                description: "Hello"
             },
             {
-                id: 3,
+                id: 11,
                 url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
                 name: "T-shirt",
                 price: 150,
-                description: "Hello",
+                description: "Hello"
             },
             {
-                id: 3,
+                id: 12,
                 url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
                 name: "T-shirt",
                 price: 150,
-                description: "Hello",
+                description: "Hello"
             },
             {
-                id: 3,
+                id: 13,
                 url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
                 name: "T-shirt",
                 price: 150,
-                description: "Hello",
+                description: "Hello"
             },
             {
-                id: 3,
+                id: 14,
                 url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
                 name: "T-shirt",
                 price: 150,
-                description: "Hello",
+                description: "Hello"
             },
             {
-                id: 3,
+                id: 15,
                 url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
                 name: "T-shirt",
                 price: 150,
-                description: "Hello",
+                description: "Hello"
             },
         ];
         var container = document.getElementById("container")
@@ -190,26 +187,23 @@
             </div>
                 `
         })
-            }
+            .join("")}
         `;
-        var bnts = document.getElementsByClassName("btn-card");
+        var btns = document.getElementsByClassName("btn-card");
         console.log(bnts);
         var cards = [];
         for (let i = 0; i < bnts.length; i++) {
-            bnts[i].addEventListener("click", () => {
+            btns[i].addEventListener("click", () => {
                 console.log("äddCard")
                 addCard(i);
             })
         }
         function addCard(ind) {
-            bnts.disabled = true;
+            btns.disabled = true;
             cards.push(products[ind]);
             localStorage.setItem("shops", JSON.stringify(cards))
 
         }
-
-
-
     </script>
 </body>
 

@@ -55,170 +55,151 @@
     </div>
   </nav>
     <p id="ti">Pant and Short</p>
-    <div class="item">
-        <div class="card">
-
-            <img src="https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1"
-                alt="Shirt" style="width:100%">
-            <h1>Pants</h1>
-            <p class="price">$100</p>
-            <p>Hello</p>
-            <p><button><a id="btn-card">Add to Cart</a></button></p>
-        </div>
+    <div id="container">
     </div>
-    <div class="item">
-        <div class="card">
+    <script>
+        var products = [
+            {
+                id: 1,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
 
-            <img src="https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1"
+            },
+            {
+                id: 2,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 75,
+                description: "Hello"
+            },
+            {
+                id: 3,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 4,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 5,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 6,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 7,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 8,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 9,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 10,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 11,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 12,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 13,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 14,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 15,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+        ];
+        var container = document.getElementById("container")
+        container.innerHTML = `
+        ${products.map((p) => {
+            return `
+                <div class="item">
+                <div class="card">
+            <img src="${p.url}"
                 alt="Shirt" style="width:100%">
-            <h1>Pants</h1>
-            <p class="price">$100</p>
-            <p>Hello</p>
-            <p><button><a id="btn-card">Add to Cart</a></button></p>
-        </div>
-    </div>
-    <div class="item">
-        <div class="card">
+            <h1>${p.name}</h1>
+            <p class="price">${p.price}$</p>
+            <p>${p.description}</p>
+            <p><button class="btn-card">Add to Cart</button></p>
+            </div>
+            </div>
+                `
+        })
+            .join("")}
+        `;
+        var bnts = document.getElementsByClassName("btn-card");
+        console.log(bnts);
+        var cards = [];
+        for (let i = 0; i < bnts.length; i++) {
+            bnts[i].addEventListener("click", () => {
+                console.log("äddCard")
+                addCard(i);
+            })
+        }
+        function addCard(ind) {
+            bnts.disabled = true;
+            cards.push(products[ind]);
+            localStorage.setItem("shops", JSON.stringify(cards))
 
-            <img src="https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1"
-                alt="Shirt" style="width:100%">
-            <h1>Pants</h1>
-            <p class="price">$100</p>
-            <p>Hello</p>
-            <p><button><a id="btn-card">Add to Cart</a></button></p>
-        </div>
-    </div>
-    <div class="item">
-        <div class="card">
-
-            <img src="https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1"
-                alt="Shirt" style="width:100%">
-            <h1>Pants</h1>
-            <p class="price">$100</p>
-            <p>Hello</p>
-            <p><button><a id="btn-card">Add to Cart</a></button></p>
-        </div>
-    </div>
-    <div class="item">
-        <div class="card">
-
-            <img src="https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1"
-                alt="Shirt" style="width:100%">
-            <h1>Pants</h1>
-            <p class="price">$100</p>
-            <p>Hello</p>
-            <p><button><a id="btn-card">Add to Cart</a></button></p>
-        </div>
-    </div><div class="item">
-        <div class="card">
-
-            <img src="https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1"
-                alt="Shirt" style="width:100%">
-            <h1>Pants</h1>
-            <p class="price">$100</p>
-            <p>Hello</p>
-            <p><button><a id="btn-card">Add to Cart</a></button></p>
-        </div>
-    </div>
-    <div class="item">
-        <div class="card">
-
-            <img src="https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1"
-                alt="Shirt" style="width:100%">
-            <h1>Pants</h1>
-            <p class="price">$150</p>
-            <p>Hello</p>
-            <p><button><a id="btn-card">Add to Cart</a></button></p>
-        </div>
-    </div>
-    <div class="item">
-        <div class="card">
-
-            <img src="https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1"
-                alt="Shirt" style="width:100%">
-            <h1>Pants</h1>
-            <p class="price">$200</p>
-            <p>Hello</p>
-            <p><button><a id="btn-card">Add to Cart</a></button></p>
-        </div>
-    </div>
-    <div class="item">
-        <div class="card">
-
-            <img src="https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1"
-                alt="Shirt" style="width:100%">
-            <h1>Pants</h1>
-            <p class="price">$500</p>
-            <p>Hello</p>
-            <p><button><a id="btn-card">Add to Cart</a></button></p>
-        </div>
-    </div>
-    <div class="item">
-        <div class="card">
-
-            <img src="https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1"
-                alt="Shirt" style="width:100%">
-            <h1>Pants</h1>
-            <p class="price">$1000</p>
-            <p>Hello</p>
-            <p><button><a id="btn-card">Add to Cart</a></button></p>
-        </div>
-    </div>
-    <div class="item">
-        <div class="card">
-
-            <img src="https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1"
-                alt="Shirt" style="width:100%">
-            <h1>Pants</h1>
-            <p class="price">$100</p>
-            <p>Hello</p>
-            <p><button><a id="btn-card">Add to Cart</a></button></p>
-        </div>
-    </div>
-    <div class="item">
-        <div class="card">
-
-            <img src="https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1"
-                alt="Shirt" style="width:100%">
-            <h1>Pants</h1>
-            <p class="price">$150</p>
-            <p>Hello</p>
-            <p><button><a id="btn-card">Add to Cart</a></button></p>
-        </div>
-    </div>
-    <div class="item">
-        <div class="card">
-
-            <img src="https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1"
-                alt="Shirt" style="width:100%">
-            <h1>Pants</h1>
-            <p class="price">$200</p>
-            <p>Hello</p>
-            <p><button><a id="btn-card">Add to Cart</a></button></p>
-        </div>
-    </div>
-    <div class="item">
-        <div class="card">
-
-            <img src="https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1"
-                alt="Shirt" style="width:100%">
-            <h1>Pants</h1>
-            <p class="price">$500</p>
-            <p>Hello</p>
-            <p><button><a id="btn-card">Add to Cart</a></button></p>
-        </div>
-    </div>
-    <div class="item">
-        <div class="card">
-
-            <img src="https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1"
-                alt="Shirt" style="width:100%">
-            <h1>Pants</h1>
-            <p class="price">$1000</p>
-            <p>Hello</p>
-            <p><button><a id="btn-card">Add to Cart</a></button></p>
-        </div>
-    </div>
+        }
+    </script>
 </body>
 
 </html>
