@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Dizzy House</title>
+    <link rel="stylesheet" href="./../Css/Index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <!--Nav-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">Dizzy House</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Item
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./Html/Shirt.html">Shirt</a></li>
+                            <li><a class="dropdown-item" href="./Html/Shoe.html">Shoe</a></li>
+                            <li><a class="dropdown-item" href="./Html/Pant and short.html">Short & Pant</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Html/About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Html/Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--tittle-->
+    <div id="head">
+        <a>Dizzy House</a>
+    </div>
+    <!-- card -->
+    <div id="container">
+    </div>
+    <script>
+        var products = [
+            {
+                id: 1,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+
+            },
+            {
+                id: 2,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 75,
+                description: "Hello"
+            },
+            {
+                id: 3,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 4,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 5,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 6,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 7,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 8,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 9,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 10,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 11,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 12,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 13,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 14,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+            {
+                id: 15,
+                url: "https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
+                name: "T-shirt",
+                price: 150,
+                description: "Hello"
+            },
+        ];
+        var container = document.getElementById("container")
+        container.innerHTML = `
+        ${products.map((p) => {
+            return `
+                <div class="item">
+                <div class="card">
+            <img src="${p.url}"
+                alt="Shirt" style="width:100%">
+            <h1>${p.name}</h1>
+            <p class="price">${p.price}$</p>
+            <p>${p.description}</p>
+            <p><button class="btn-card">Add to Cart</button></p>
+            </div>
+            </div>
+                `
+        })
+                .join("")}
+        `;
+        var btns = document.getElementsByClassName("btn-card");
+        console.log(bnts);
+        var cards = [];
+        for (let i = 0; i < bnts.length; i++) {
+            btns[i].addEventListener("click", () => {
+                console.log("äddCard")
+                addCard(i);
+            })
+        }
+        function addCard(ind) {
+            btns.disabled = true;
+            cards.push(products[ind]);
+            localStorage.setItem("shops", JSON.stringify(cards))
+
+        }
+    </script>
+</body>
+
+</html>
