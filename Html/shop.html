@@ -11,38 +11,92 @@
 <body>
     <p id="amountCard"></p>
     <div class="item">
-        <img class="image" src="${item.url}"/>
-        <p class='desc'>${item.description}</p>
-        <p class='desc'>${item.price}</p>
-        <div class="btn">
-            <button class="btns">Add card</button>
+        <div class="card">
+            <img src="${p.url}" alt="Shirt" style="width:100%">
+            <h1>${p.name}</h1>
+            <p class="price">${p.price}$</p>
+            <p>${p.description}</p>
+            <p><button class="btn-card">Add to Cart</button></p>
         </div>
     </div>
     <div id="container"></div>
     <a href="./card.html">Go to product</a>
     <script>
-        const items = [{
-            id: 1,
-            url:"https://resize-image.tshirtstudio.com/ShowImage.aspx?Name=megaMenuTshirt.jpg&Wx=750&Page=general&Vr=96&Hr=96&Format=jpg&Language=1",
-            description: "Card-01",
-            price: 5,
-            inCard: 1,    
-        },
-        {
+        const products = [
+            {
+                id: 1,
+                url: "./../Image/vichet.jpg"
+            description: "Card 01",
+                price: 3
+            inCard: 1,
+            },
+            {
+                id: 2,
+                url: "./../Image/vichet.jpg"
+            description: "Card 01",
+                price: 3
+            inCard: 1,
+            },
+            {
+                id: 3,
+                url: "./../Image/vichet.jpg"
+            description: "Card 01",
+                price: 3
+            inCard: 1,
+            },
+            {
+                id: 4,
+                url: "./../Image/vichet.jpg"
+            description: "Card 01",
+                price: 3
+            inCard: 1,
+            },
+            {
+                id: 5,
+                url: "./../Image/vichet.jpg"
+            description: "Card 01",
+                price: 3
+            inCard: 1,
+            },
+            {
+                id: 6,
+                url: "./../Image/vichet.jpg"
+            description: "Card 01",
+                price: 3
+            inCard: 1,
+            },
+        ]
+        var container = document.getElementById("container");
 
-        },
-    ]
-    var container= document.getElementById("container");
-
-    app.innerHTML =`
-        ${
-            products.map((product)=>{
-                return `
-
-                ` 
-            })
+        container.innerHTML = `
+        ${products.map((product) => {
+            return `
+                <div class="item">
+                <div class="card">
+            <img src="${p.url}"
+                alt="Shirt" style="width:100%">
+            <h1>${p.name}</h1>
+            <p class="price">${p.price}$</p>
+            <p>${p.description}</p>
+            <p><button class="btn-card">Add to Cart</button></p>
+            </div>
+            </div>
+                `
+        }).join("")
+            }
+        `
+        var btns = document.getElementsByClassName("btns");
+        var card = [];
+        for (let i = 0; i < btns.length; i++) {
+            btns[0].addEventListener("click", () => {
+                addCart(i);
+            });
         }
-    `
+        function addCart(index) {
+            cards.push(products[index])
+            btns[index].disabled = true;
+            localStorage.setItem("products", JSON.stringify(cards))
+        }
     </script>
 </body>
 
