@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <style>
-    *{
+    * {
         padding: 0px;
         margin: 0px;
     }
-    img{
-        width: 100%;
-        height: 100vh;
+
+    img {
+        width: 70%;
+        height: 90vh;
     }
 </style>
+
 <body>
-    <img id="slide" src="./../Image/White shirt.jpg" alt="">
+    <img id="slide" src="./../Image/White_shirt.jpg" alt="">
 
     <script>
-        var path="./../Image/"
+        var path = "./../Image/"
 
 
-        var slide_element= document.getElementById("slide");
-        var sliders= ["White shirt.jpg","White blue shirt.jpg","Work shirt.jpg"];
-        var idex = 0;
-        
-        setInterval(function(){
-            slide_element.src=path+sliders[index];
+        var slide_element = document.getElementById("slide");
+        var sliders = ["White_shirt.jpg", "White_blue_shirt.jpg", "Work_shirt.jpg"];
+        var index = 0;
+
+        setInterval(function () {
+            slide_element.src = path + sliders[index];
             index++;
+            if (index >= sliders.length) {
+                index = 0;
+            }
             console.log(index);
-        }, 3000)
+        }, 1000)
     </script>
 </body>
+
 </html>
