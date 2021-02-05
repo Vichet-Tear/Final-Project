@@ -19,9 +19,18 @@
     <img id="slide" src="./../Image/White shirt.jpg" alt="">
 
     <script>
-        var path="./../Image/Work shirt.jpg"
+        var path="./../Image/"
+
+
         var slide_element= document.getElementById("slide");
-        slide_element.src=path+"./../Image/White blue shirt.jpg"
+        var sliders= ["White shirt.jpg","White blue shirt.jpg","Work shirt.jpg"];
+        var idex = 0;
+        
+        setInterval(function(){
+            slide_element.src=path+sliders[index];
+            index++;
+            console.log(index);
+        }, 3000)
     </script>
 </body>
 </html>
