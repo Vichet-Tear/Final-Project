@@ -1,6 +1,6 @@
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Langar', cursive;
 }
 
 .container-fluid {
@@ -16,7 +16,7 @@ body {
     margin: auto;
     padding: 2%;
     font-size: 40px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Langar', cursive;
     font-weight: bold;
 }
 .text-align-center{

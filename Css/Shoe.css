@@ -1,36 +1,125 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-}
 
-.nav-item {
+*{
+    padding: 0px;
+    margin: 0px;
+  }
+  #head{
+    font-size: 33px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 15px;
+    text-decoration: underline white;
+    color: white;
+    font-family: 'Langar', cursive;
+  }
+  .nav-item {
     padding-left: 24px;
-}
-
-.text-center {
-    padding: 2%;
-    margin: auto;
-    font-size: 40px;
-    font-family: 'Lobster', cursive;
-    font-weight: bold;
-}
-
-.card {
-    box-sizing: border-box;
-    width: 22%;
-    float: left;
+  }
+  
+  .container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+  .card {
     position: relative;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
-    margin-bottom: 2%;
-}
-
-.card:hover {
-    border-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    height: 39vh;
+    margin: auto;
+    text-align: center;
+    font-family: 'Yeon Sung', cursive;
+    float: left;
+    display: table;
+    clear: both;
+    content: "";
+  }
+  
+  .card #btn-card{
+    color:white;
+  }
+  .card img{
+    height: 21vh ;
+  }
+  
+  .item{
+    box-sizing: border-box;
+    float: left;
+    width: 16.66%;
+    padding: 2%;
+  }
+  @media only screen and (max-width: 600px) {
+    .item{
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .item{
+      width: 75%;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .item{
+      width: 50%;
+    }
+  }
+  .price {
+    color: black;
+    font-size: 22px;
+    font-family: 'Yeon Sung', cursive;
+  }
+  
+  .card button {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    text-align: center;
     cursor: pointer;
-}
-
-.givenchy , .nikeJordan, .redAdidas, .nikeGalaxy,.yellowFila, .nike001, .puma,.vans,.adAnimation,.adidasBl,.blAdidas,.yeezy{
-    height: 250px;
-}
-
-
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  a:link {
+    color: white;
+    background-color: transparent;
+  }
+  #ti{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+    font-family: 'Langar', cursive;
+    margin-top: 30px;
+  }
