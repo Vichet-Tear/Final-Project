@@ -16,6 +16,15 @@ body{
   color: white;
   font-family: 'Langar', cursive;
 }
+.nav-item {
+  padding-left: 24px;
+}
+
+.container-fluid {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -43,7 +52,7 @@ body{
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
-  height: 37vh;
+  height: 43vh;
   margin: auto;
   text-align: center;
   font-family: 'Yeon Sung', cursive;
@@ -65,7 +74,6 @@ body{
   float: left;
   width: 20%;
   padding: 2%;
-  /* height: 50vh; */
 }
 @media only screen and (max-width: 600px) {
   .item{

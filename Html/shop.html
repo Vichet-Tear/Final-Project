@@ -1,20 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./../Css/shop.css">
 </head>
+
 <body>
     <p id="amountCard"></p>
+    <div class="item">
+        <div class="card">
+            <img src="${p.url}" alt="Shirt" style="width:100%">
+            <h1>${p.name}</h1>
+            <p class="price">${p.price}$</p>
+            <p>${p.description}</p>
+            <p><button class="btn-card">Add to Cart</button></p>
+        </div>
+    </div>
     <div id="container"></div>
     <a href="./card.html">Go to product</a>
     <script>
-        const items = {
+        const products = [
             {
-                id:
+                id: 1,
+                url: "./../Image/vichet.jpg"
+            description: "Card 01",
+                price: 3
+            inCard: 1,
+            },
+            {
+                id: 2,
+                url: "./../Image/vichet.jpg"
+            description: "Card 01",
+                price: 3
+            inCard: 1,
+            },
+            {
+                id: 3,
+                url: "./../Image/vichet.jpg"
+            description: "Card 01",
+                price: 3
+            inCard: 1,
+            },
+            {
+                id: 4,
+                url: "./../Image/vichet.jpg"
+            description: "Card 01",
+                price: 3
+            inCard: 1,
+            },
+            {
+                id: 5,
+                url: "./../Image/vichet.jpg"
+            description: "Card 01",
+                price: 3
+            inCard: 1,
+            },
+            {
+                id: 6,
+                url: "./../Image/vichet.jpg"
+            description: "Card 01",
+                price: 3
+            inCard: 1,
+            },
+        ]
+        var container = document.getElementById("container");
+
+        container.innerHTML = `
+        ${products.map((product) => {
+            return `
+                <div class="item">
+                <div class="card">
+            <img src="${p.url}"
+                alt="Shirt" style="width:100%">
+            <h1>${p.name}</h1>
+            <p class="price">${p.price}$</p>
+            <p>${p.description}</p>
+            <p><button class="btn-card">Add to Cart</button></p>
+            </div>
+            </div>
+                `
+        }).join("")
             }
+        `
+        var btns = document.getElementsByClassName("btns");
+        var card = [];
+        for (let i = 0; i < btns.length; i++) {
+            btns[0].addEventListener("click", () => {
+                addCart(i);
+            });
+        }
+        function addCart(index) {
+            cards.push(products[index])
+            btns[index].disabled = true;
+            localStorage.setItem("products", JSON.stringify(cards))
         }
     </script>
 </body>
+
 </html>

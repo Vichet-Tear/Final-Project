@@ -48,6 +48,9 @@ input[type=text], select, textarea ,input[type=email]{
   border-radius: 4px;
   resize: vertical;
 }
+.nav-item {
+  padding-left: 24px;
+}
 
 label {
   padding: 12px 12px 12px 0;
